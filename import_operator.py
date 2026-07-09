@@ -90,6 +90,8 @@ class ImportKH1Map(bpy.types.Operator, ImportHelper):
 
         if self.disable_color_management:
             self._disable_color_management(context, warnings.append)
+        if self.shading == "EMISSION":
+            self._disable_eevee_shadows(context, warnings.append)
 
         texture_groups = [bin_file.map_texture_blocks]
         if self.import_sky:
@@ -157,6 +159,19 @@ class ImportKH1Map(bpy.types.Operator, ImportHelper):
             view_settings.look = "None"
         except TypeError:
             pass
+
+    def _disable_eevee_shadows(self, context, warn):
+        """Unlit materials use Emission, so EEVEE never has anything to
+        shadow; leaving shadow sampling on only costs viewport/render
+        performance. Set on the scene's EEVEE settings regardless of the
+        currently active render engine, so it takes effect if the user
+        switches to EEVEE later."""
+        eevee = context.scene.eevee
+        if not hasattr(eevee, "use_shadows"):
+            warn("Could not disable EEVEE shadows: 'use_shadows' not found "
+                "on this Blender's EEVEE settings")
+            return
+        eevee.use_shadows = False
 
     def _animate_sky1(self, factor, objects, collection, name, fps):
         """The game spins the SKY1 layer about the vertical axis by
