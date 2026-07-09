@@ -14,11 +14,13 @@ The map format parser is a Python port of the Kingdom Hearts renderer from
   Final Mix. The addon has a built-in extractor (see below), so no external
   tools are needed.
 
-## Install
-
-Zip the `io_scene_kh1map` folder and install via
-`Edit > Preferences > Add-ons > Install from Disk`, or copy the folder into
-your Blender `scripts/addons` directory. Enable "Kingdom Hearts Map Importer".
+## Installation
+1. Click the green "Code" button above and press "Download ZIP"
+2. Go into Blender's addon preferences (File → Preferences → Addons)
+3. Click the <img width="20" height="21" alt="image" src="https://github.com/user-attachments/assets/92cefcff-c9d0-4c29-b1ef-a7efe9d07016" /> button on the top right of the window, and select "Install from Disk..."
+4. Browse to the ZIP file you just downloaded, select it, and press Return/Enter.
+   
+You can find the importer via Blender's "_FIle_" -> "_Import_" menu.
 
 ## Extracting the game files
 
