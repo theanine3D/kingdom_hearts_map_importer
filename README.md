@@ -44,7 +44,7 @@ extracted map files and rename them with readable scene names from the
 [OpenKH](https://openkh.dev/) project's KH1 worlds documentation. For example:
 
 ```
-kingdom/al00_01.bin  ->  kingdom/Worlds/Agrabah/Desert (al00_01).bin
+/al00_01.bin  ->  /Worlds/Agrabah/Desert (al00_01).bin
 ```
 
 Every `.bin`/`.img` pair is renamed after its in-game area (with the
