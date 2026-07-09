@@ -22,7 +22,7 @@ your Blender `scripts/addons` directory. Enable "Kingdom Hearts Map Importer".
 
 ## Extracting the game files
 
-On the right-hand side of the Blender window, go into the World tab, then
+On the right-hand side of the Blender window, go into the <img width="18" height="18" alt="image" src="https://github.com/user-attachments/assets/b7661513-b361-4960-a5cd-f88a3a1812ff" /> World tab, then
 open the `Kingdom Hearts ISO Extractor` subpanel. Select your game ISO
 and an output folder, then press **Extract**. All game files are pulled out
 of the ISO, including the map `.bin`/`.img` pairs the importer reads.
