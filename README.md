@@ -50,7 +50,7 @@ original id kept in parentheses), so you can browse to "Traverse Town /
 1st District" instead of decoding filenames like `tw00_01`. Non-map files
 are left untouched, and the renamed pairs import normally.
 
-## Use
+## How to Use
 
 `File > Import > Kingdom Hearts Map (.bin)` — pick a map `.bin`; the `.img`
 is loaded automatically from the same folder.
