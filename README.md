@@ -1,3 +1,5 @@
+<img width="710" height="368" alt="1" src="https://github.com/user-attachments/assets/51828855-99de-4f8f-99dc-36552bc4e00e" />
+
 # Kingdom Hearts (PS2) Map Importer for Blender
 
 Imports scene models from Kingdom Hearts / Kingdom Hearts Final Mix (PS2)
